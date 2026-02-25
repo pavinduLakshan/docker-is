@@ -1,6 +1,6 @@
 # ------------------------------------------------------------------------
 #
-# Copyright 2024-2025 WSO2, LLC. (http://wso2.com)
+# Copyright 2026 WSO2, LLC. (http://wso2.com)
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -70,11 +70,11 @@ ARG USER_GROUP_ID=802
 ARG USER_HOME=/home/${USER}
 # Build arguments for WSO2 product installation.
 ARG WSO2_SERVER_NAME=wso2is
-ARG WSO2_SERVER_VERSION=7.2.0
+ARG WSO2_SERVER_VERSION=7.3.0-m1
 ARG WSO2_SERVER_REPOSITORY=product-is
 ARG WSO2_SERVER=${WSO2_SERVER_NAME}-${WSO2_SERVER_VERSION}
 ARG WSO2_SERVER_HOME=${USER_HOME}/${WSO2_SERVER}
-# Hosted wso2is-7.2.0 distribution URL.
+# Hosted wso2is-7.3.0-m1 distribution URL.
 ARG WSO2_SERVER_DIST_URL=https://github.com/wso2/${WSO2_SERVER_REPOSITORY}/releases/download/v${WSO2_SERVER_VERSION}/${WSO2_SERVER}.zip
 # Build arguments for external artifacts.
 ARG DNS_JAVA_VERSION=3.6.1
